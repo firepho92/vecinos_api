@@ -1,0 +1,14 @@
+{
+  "generator-kraken": {
+    "taskModule": "grunt",
+    "lintModule": "eslint",
+    "description": "restful api for android app",
+    "author": "Roberto Sustaita, Alexandro Aguilar",
+    "templateModule": "makara",
+    "i18n": "i18n",
+    "componentPackager": false,
+    "cssModule": false,
+    "jsModule": "requirejs",
+    "useJson": null
+  }
+}
