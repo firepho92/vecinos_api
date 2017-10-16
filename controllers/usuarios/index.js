@@ -48,4 +48,21 @@ module.exports = function (router) {
         
     });
 
+    router.post('/login', function (req, res) {
+        var usuario = req.body;
+
+        connection.query('SELECT * FROM usuarios WHERE usuario=?', usuario.usuario, function (error, results, fields) {
+            if(error) throw error;
+            if(results.length === 0){
+                res.send("Error usuario o contraseña inválidos");
+            }else{
+                if(usuario.contraseña != results[0].contraseña){
+                    res.send("Error usuario o contraseña inválidos");
+                }else{
+                    res.send(results);
+                }
+            }
+        });
+    });
+
 };
