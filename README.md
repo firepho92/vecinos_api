@@ -2,7 +2,6 @@
 <<<<<<< HEAD
 Vecinos
 ===========
-<p>hola</p>
 restful api for android app
 =======
 # vecinos_api
